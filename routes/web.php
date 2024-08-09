@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\Admin\V1\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 Route::get('/login', function(){
     return view('auth.login');
@@ -19,3 +21,5 @@ Route::get('/reset-password', function(){
 Route::get('/new-password', function(){
     return view('auth.new_password');
 });
+
+Route::get('/system/home', [HomeController::class, 'home']);
