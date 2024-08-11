@@ -3,8 +3,8 @@
 @section('body')
 <div class="container mt-5">
   <div class="page-inner">
-  <div class="table-responsive">
-            <table class="table table-striped table-bordered">
+  <div class="table-responsive mt-10" style="margin-top:2rem;">
+            <table class=" mt-8 table table-striped table-bordered">
                 <thead>
                     <tr>
                         <th>#</th>
