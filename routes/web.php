@@ -38,7 +38,7 @@ Route::group([
     Route::get('/settings', [SiteSettingsController::class, 'index'])->name('settings');
 
     // roles and permission
-    Route::get('/roles', [RolesController::class, 'index'])->name('roles');
+    Route::resource('/roles', RolesController::class);
 
     //users
     Route::resource('users', UsersController::class);

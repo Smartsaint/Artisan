@@ -3,12 +3,7 @@
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
             <a href="index.html" class="logo">
-              <img
-                src="assets/img/kaiadmin/logo_light.svg"
-                alt="navbar brand"
-                class="navbar-brand"
-                height="20"
-              />
+              <h2>Artisan Finder</h2>
             </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
@@ -53,17 +48,17 @@
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="components/avatars.html">
+                      <a href="{{route('system.users.index', ['type'=>'users'])}}">
                         <span class="sub-item">Users</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/buttons.html">
+                      <a href="{{route('system.users.index', ['type'=>'artisans'])}}">
                         <span class="sub-item">Artisans</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/gridsystem.html">
+                      <a href="{{route('system.users.index', ['type'=>'admins'])}}">
                         <span class="sub-item">Admins</span>
                       </a>
                     </li>
@@ -144,12 +139,12 @@
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="">
+                      <a href="{{route('system.roles.index')}}">
                         <span class="sub-item">View Roles</span>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="{{route('system.roles.create')}}">
                         <span class="sub-item">Create Roles</span>
                       </a>
                     </li>
@@ -207,9 +202,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{{route('system.settings')}}">
                   <i class="fas fa-file"></i>
-                  <p>Documentation</p>
+                  <p>Site Settings</p>
                   <span class="badge badge-secondary">1</span>
                 </a>
               </li>

@@ -9,6 +9,11 @@ class RolesController extends Controller
 {
     public function index()
     {
+        return view('system.role.index');
+    }
+
+    public function create()
+    {
         return view('system.role.create');
     }
 }
