@@ -1,5 +1,24 @@
 @extends('layouts.system')
 
+@section('head')
+<style>
+        .profile-header {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+    </style>
+@endsection
+
 @section('body')
 <div class="container mt-5">
     <div class="page-inner">

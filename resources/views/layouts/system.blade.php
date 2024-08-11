@@ -43,6 +43,7 @@
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="{{asset('system_assets/css/demo.css')}}" />
+    @yield('head')
   </head>
   <body>
     <div class="wrapper">

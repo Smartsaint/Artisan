@@ -2,7 +2,7 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="text-light">
               <h2>Artisan Finder</h2>
             </a>
             <div class="nav-toggle">

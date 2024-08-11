@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\V1\HomeController;
+use App\Http\Controllers\Admin\V1\NotificationsController;
 use App\Http\Controllers\Admin\V1\RolesController;
 use App\Http\Controllers\Admin\V1\SiteSettingsController;
 use App\Http\Controllers\Admin\V1\UsersController;
@@ -36,6 +37,8 @@ Route::group([
 
     // site settings
     Route::get('/settings', [SiteSettingsController::class, 'index'])->name('settings');
+    Route::get('notification', [NotificationsController::class, 'index'])->name('notification.index');
+
 
     // roles and permission
     Route::resource('/roles', RolesController::class);

@@ -3,18 +3,48 @@
 @section('body')
 <div class="container mt-5">
   <div class="page-inner">
-        <h2>Create Role</h2>
-        <form action="/create-role" method="POST">
-            <div class="mb-3">
-                <label for="roleName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="roleName" name="name" placeholder="Enter role name" required>
-            </div>
-            <div class="mb-3">
-                <label for="roleDescription" class="form-label">Description</label>
-                <textarea class="form-control" id="roleDescription" name="description" rows="3" placeholder="Enter role description"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Create Role</button>
-        </form>
+  <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Role Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Admin</td>
+                        <td>Full access to all features and settings.</td>
+                        <td>
+                            <button class="btn btn-info btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Editor</td>
+                        <td>Can edit and manage content.</td>
+                        <td>
+                            <button class="btn btn-info btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Viewer</td>
+                        <td>Can view content but cannot make changes.</td>
+                        <td>
+                            <button class="btn btn-info btn-sm">Edit</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
   </div>
 </div>
 @endsection 
