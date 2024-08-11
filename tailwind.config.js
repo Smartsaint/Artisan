@@ -20,7 +20,7 @@ module.exports = {
                  'green':'#3ecd65',
                  'green-l':'#e9ffef',
                  'btn-orange':'#EB9422',
-
+                 'pop': '#9747fb',
         }
       },
     },

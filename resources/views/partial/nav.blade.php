@@ -1,8 +1,8 @@
 
-<nav class="bg-[#f8f9fd] fixed w-full z-20 top-0 start-0  z-1000 ">
-    <div class="flex flex-wrap items-center justify-around max-w-screen-xl p-4 mx-auto z-100">
+<nav class="bg-[#f8f9fd] fixed w-full z-20 top-0 start-0 left-0 right-0 mb-6  z-1000 ">
+    <div class="flex flex-wrap justify-between max-w-screen-xl p-4 mx-auto md:items-center md:justify-around z-100">
 
-    <div class="flex gap-6 space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+    <div class="flex justify-between space-x-3 md:gap-6 md:order-2 md:space-x-0 rtl:space-x-reverse">
         <div class="relative hidden md:block ">
             <div class="absolute inset-y-0 flex items-center pointer-events-none end-2 ps-3 ">
               <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -14,15 +14,15 @@
           </div>
 
           <div class="flex gap-6 mt-">
-            <div class="">
+            <div class="mr-6 md:mr-0">
                 <a href=""  type="button" class="px-5 py-2 text-sm font-medium text-center text-dark bg-btn-light rounded-3xl">Log In</a>
         </div>
-            <div class="">
+            <div class="mr-4 md:mr-0">
                 <a href=""  type="button" class="py-2 text-sm font-medium text-center text-white px-7 bg-btn rounded-3xl">Sign Up</a>
         </div>
         </div>
 
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 " aria-controls="navbar-sticky" aria-expanded="false">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
