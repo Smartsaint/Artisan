@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Admin\V1\HomeController;
+use App\Http\Controllers\Admin\V1\RolesController;
+use App\Http\Controllers\Admin\V1\SiteSettingsController;
+use App\Http\Controllers\Admin\V1\UsersController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
@@ -22,4 +25,22 @@ Route::get('/new-password', function(){
     return view('auth.new_password');
 });
 
-Route::get('/system/home', [HomeController::class, 'home']);
+
+
+Route::group([
+    'prefix' => 'system',
+    'as' => 'system.',
+    // 'middleware' => ['auth'],    // Apply authentication middleware
+], function () {
+    Route::get('/home', [HomeController::class, 'home'])->name('home');
+
+    // site settings
+    Route::get('/settings', [SiteSettingsController::class, 'index'])->name('settings');
+
+    // roles and permission
+    Route::get('/roles', [RolesController::class, 'index'])->name('roles');
+
+    //users
+    Route::resource('users', UsersController::class);
+    // Route::get('user', [UsersController::class, 'show'])->name('user');
+});
