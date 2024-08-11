@@ -4,7 +4,7 @@
             <div class="logo-header" data-background-color="dark">
               <a href="index.html" class="logo">
                 <img
-                  src="assets/img/kaiadmin/logo_light.svg"
+                  src="{{asset('system_assets/img/kaiadmin/logo_light.svg')}}"
                   alt="navbar brand"
                   class="navbar-brand"
                   height="20"
@@ -102,7 +102,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/jm_denis.jpg"
+                                src="{{asset('system_assets/img/jm_denis.jpg')}}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -115,7 +115,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/chadengle.jpg"
+                                src="{{asset('system_assets/img/chadengle.jpg')}}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -128,7 +128,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/mlane.jpg"
+                                src="{{asset('system_assets/img/mlane.jpg')}}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -235,7 +235,7 @@
                       </div>
                     </li>
                     <li>
-                      <a class="see-all" href="javascript:void(0);"
+                      <a class="see-all" href="{{route('system.notification.index')}}"
                         >See all notifications<i class="fa fa-angle-right"></i>
                       </a>
                     </li>

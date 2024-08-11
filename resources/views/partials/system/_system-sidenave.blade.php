@@ -2,13 +2,8 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
-              <img
-                src="assets/img/kaiadmin/logo_light.svg"
-                alt="navbar brand"
-                class="navbar-brand"
-                height="20"
-              />
+            <a href="index.html" class="text-light">
+              <h2>Artisan Finder</h2>
             </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
@@ -29,103 +24,65 @@
             <ul class="nav nav-secondary">
               <li class="nav-item active">
                 <a
-                  data-bs-toggle="collapse"
-                  href="#dashboard"
+                  href="{{route('system.home')}}"
                   class="collapsed"
-                  aria-expanded="false"
                 >
                   <i class="fas fa-home"></i>
                   <p>Dashboard</p>
                   <span class="caret"></span>
                 </a>
-                <div class="collapse" id="dashboard">
-                  <ul class="nav nav-collapse">
-                    <li>
-                      <a href="../demo1/index.html">
-                        <span class="sub-item">Dashboard 1</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              
               </li>
               <li class="nav-section">
                 <span class="sidebar-mini-icon">
                   <i class="fa fa-ellipsis-h"></i>
                 </span>
-                <h4 class="text-section">Components</h4>
+                <h4 class="text-section">More</h4>
               </li>
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#base">
                   <i class="fas fa-layer-group"></i>
-                  <p>Base</p>
+                  <p>Users</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="components/avatars.html">
-                        <span class="sub-item">Avatars</span>
+                      <a href="{{route('system.users.index', ['type'=>'users'])}}">
+                        <span class="sub-item">Users</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/buttons.html">
-                        <span class="sub-item">Buttons</span>
+                      <a href="{{route('system.users.index', ['type'=>'artisans'])}}">
+                        <span class="sub-item">Artisans</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/gridsystem.html">
-                        <span class="sub-item">Grid System</span>
+                      <a href="{{route('system.users.index', ['type'=>'admins'])}}">
+                        <span class="sub-item">Admins</span>
                       </a>
                     </li>
-                    <li>
-                      <a href="components/panels.html">
-                        <span class="sub-item">Panels</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/notifications.html">
-                        <span class="sub-item">Notifications</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/sweetalert.html">
-                        <span class="sub-item">Sweet Alert</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/font-awesome-icons.html">
-                        <span class="sub-item">Font Awesome Icons</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/simple-line-icons.html">
-                        <span class="sub-item">Simple Line Icons</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="components/typography.html">
-                        <span class="sub-item">Typography</span>
-                      </a>
-                    </li>
+                   
+                  
                   </ul>
                 </div>
               </li>
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts">
                   <i class="fas fa-th-list"></i>
-                  <p>Sidebar Layouts</p>
+                  <p>Blog</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="sidebar-style-2.html">
-                        <span class="sub-item">Sidebar Style 2</span>
+                        <span class="sub-item">Index</span>
                       </a>
                     </li>
                     <li>
                       <a href="icon-menu.html">
-                        <span class="sub-item">Icon Menu</span>
+                        <span class="sub-item">Create</span>
                       </a>
                     </li>
                   </ul>
@@ -134,14 +91,19 @@
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#forms">
                   <i class="fas fa-pen-square"></i>
-                  <p>Forms</p>
+                  <p>Posts</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="forms">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="forms/forms.html">
-                        <span class="sub-item">Basic Form</span>
+                        <span class="sub-item">Services</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="forms/forms.html">
+                        <span class="sub-item">Gigs</span>
                       </a>
                     </li>
                   </ul>
@@ -150,19 +112,19 @@
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#tables">
                   <i class="fas fa-table"></i>
-                  <p>Tables</p>
+                  <p>API Mgt</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="tables">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="tables/tables.html">
-                        <span class="sub-item">Basic Table</span>
+                        <span class="sub-item">Payment APIs</span>
                       </a>
                     </li>
                     <li>
                       <a href="tables/datatables.html">
-                        <span class="sub-item">Datatables</span>
+                        <span class="sub-item">Map API </span>
                       </a>
                     </li>
                   </ul>
@@ -171,19 +133,41 @@
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#maps">
                   <i class="fas fa-map-marker-alt"></i>
-                  <p>Maps</p>
+                  <p>Roles and Permissions</p>
                   <span class="caret"></span>
                 </a>
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="maps/googlemaps.html">
-                        <span class="sub-item">Google Maps</span>
+                      <a href="{{route('system.roles.index')}}">
+                        <span class="sub-item">View Roles</span>
                       </a>
                     </li>
                     <li>
-                      <a href="maps/jsvectormap.html">
-                        <span class="sub-item">Jsvectormap</span>
+                      <a href="{{route('system.roles.create')}}">
+                        <span class="sub-item">Create Roles</span>
+                      </a>
+                    </li>
+                
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Transactions</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="charts/charts.html">
+                        <span class="sub-item">All</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="charts/sparkline.html">
+                        <span class="sub-item">In Progress</span>
                       </a>
                     </li>
                   </ul>
@@ -218,9 +202,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{{route('system.settings')}}">
                   <i class="fas fa-file"></i>
-                  <p>Documentation</p>
+                  <p>Site Settings</p>
                   <span class="badge badge-secondary">1</span>
                 </a>
               </li>
